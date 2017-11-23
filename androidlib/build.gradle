@@ -31,7 +31,6 @@ dependencies {
 }
 
 
-apply plugin: 'com.android.library'
 ext {
     bintrayRepo = 'maven'
     bintrayName = 'androidlib'   // Has to be same as your library module name
