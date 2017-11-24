@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 26
@@ -30,9 +31,20 @@ dependencies {
     testCompile 'junit:junit:4.12'
 }
 
+publish {
+    groupId = 'com.github.mshehzad1'
+    artifactId = 'androidlib'
+    publishVersion = '1.0'
+    desc = 'Library that helps a few lines of code to get pictures and video from the android file system, or ures cloud, as well as the camera device.'
+    licences = ['Apache-2.0']
+    uploadName='androidlib'
+    website = 'https://github.com/mshehzad1/AndroidLib.git'
+}
+
+/*
 
 ext {
-    bintrayRepo = 'maven'
+    bintrayRepo = 'origamistudios/AndroidLib/androidlib'
     bintrayName = 'androidlib'   // Has to be same as your library module name
 
     publishedGroupId = 'com.origami.androidlib'
@@ -59,4 +71,4 @@ ext {
 
 // Place it at the end of the file
 apply from: 'https://raw.githubusercontent.com/nisrulz/JCenter/master/installv1.gradle'
-apply from: 'https://raw.githubusercontent.com/nisrulz/JCenter/master/bintrayv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nisrulz/JCenter/master/bintrayv1.gradle'*/
