@@ -1,5 +1,7 @@
 apply plugin: 'com.android.library'
-apply plugin: 'com.novoda.bintray-release'
+//apply plugin: 'com.novoda.bintray-release'
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.mshehzad1'
 
 android {
     compileSdkVersion 26
@@ -30,7 +32,7 @@ dependencies {
     compile 'com.android.support:appcompat-v7:26.+'
     testCompile 'junit:junit:4.12'
 }
-
+/*
 publish {
     groupId = 'com.github.mshehzad1'
     artifactId = 'androidlib'
@@ -39,7 +41,7 @@ publish {
     licences = ['Apache-2.0']
     uploadName='androidlib'
     website = 'https://github.com/mshehzad1/AndroidLib.git'
-}
+}*/
 
 /*
 
